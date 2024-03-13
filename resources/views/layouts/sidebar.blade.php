@@ -1,6 +1,4 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-
-
 <div class="app-brand demo ">
 <a href="index.html" class="app-brand-link">
 {{-- <span class="app-brand-logo demo">
@@ -37,7 +35,7 @@
 <li class="menu-item {{ $page['name'] == 'Procurement Activities' ? 'active open' : '' }}">
 <a href="/procurements/" class="menu-link">
 <i class="menu-icon tf-icons ti ti-files"></i>
-<div data-i18n="Dashboards">Procurement Activities</div>
+<div data-i18n="Dashboards">Public Bidding</div>
 </a>
 </li>
 
@@ -70,10 +68,23 @@
 
 {{-- ARCHIVE --}}
 <li class="menu-item {{ $page['name'] == 'Archive Procurement' ? 'active open' : '' }}">
-<a href="/archives" class="menu-link">
+<a href="#" class="menu-link menu-toggle">
 <i class='menu-icon tf-icons ti ti-folder'></i>
 <div data-i18n="Front Pages">Archives</div>
 </a>
+
+<ul class="menu-sub">
+<li class="menu-item {{ $page['name'] == 'Archive Procurement' ? 'active open' : '' }}">
+<a href="/archives/procurements" class="menu-link">
+<div data-i18n="Collapsed menu">Public Bidding</div>
+</a>
+</li>
+<li class="menu-item {{ $page['name'] == 'Archive Alternative' ? 'active open' : '' }}">
+<a href="/archives/procurements/alternative" class="menu-link">
+<div data-i18n="Content navbar">Alternative Mode of Procurement</div>
+</a>
+</li>
+</ul>
 </li>
 @if (Auth::user()->type == '1')
 {{-- Users --}}
@@ -89,7 +100,7 @@
     <i class='menu-icon tf-icons ti ti-settings'></i>
     <div data-i18n="Front Pages">Audit Trails</div>
     </a>
-    </li>
+</li>
 @endif
 </ul>
 

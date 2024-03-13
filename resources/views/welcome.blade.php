@@ -82,7 +82,7 @@ a.app-brand-link{
         </button>
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link fw-medium" id="procurement" aria-current="page" href="#ProcurementActivities">Procurement Activities</a>
+            <a class="nav-link fw-medium" id="procurement" aria-current="page" href="#ProcurementActivities">Public Bidding</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-medium" id="alternative" aria-current="page" href="#AlternativeMode">Alternative Mode Procurement</a>

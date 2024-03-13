@@ -73,7 +73,16 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/archives/table', [ArchiveController::class, 'table']);
     Route::get('/archives/{id}/show', [ArchiveController::class, 'show']);
     Route::get('/archives/{id}/restore', [ArchiveController::class, 'restore']);
-
+    //ARCHIVES - PROCUREMENT
+    Route::get('/archives/procurements', [ArchiveController::class, 'index_procurement']);
+    Route::post('/archives/procurements/table', [ArchiveController::class, 'table_procurement']);
+    Route::get('/archives/procurements/{id}/show', [ArchiveController::class, 'show_procurement']);
+    Route::get('/archives/procurements/{id}/restore', [ArchiveController::class, 'restore_procurement']);
+    //ARCHIVES - ALTERNATIVE MODE PROCUREMENT
+    Route::get('/archives/procurements/alternative', [ArchiveController::class, 'index_alternative']);
+    Route::post('/archives/procurements/alternative/table', [ArchiveController::class, 'table_alternative']);
+    Route::get('/archives/procurements/alternative/{id}/show', [ArchiveController::class, 'show_alternative']);
+    Route::get('/archives/procurements/alternative/{id}/restore', [ArchiveController::class, 'restore_alternative']);
     //AUDIT TRAILS
     Route::get('/audit_trails', [AuditTrailController::class, 'index']);
     Route::post('/audit_trails/table', [AuditTrailController::class, 'table']);

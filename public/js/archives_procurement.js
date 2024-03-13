@@ -18,7 +18,7 @@ $.ajaxSetup({
     bDestroy: true,
     order: [],
     ajax: {
-    url: '/archives/table',
+    url: '/archives/procurements/table',
     type: 'POST',
     data: {alterproc: 1},
     },
@@ -36,8 +36,8 @@ $.ajaxSetup({
     { data: 'deleted_at'},
     {
     render: function ( data, type, row, meta ) {
-    return '<div class="d-flex justify-content-center"><a href="/archives/'+row.id+'/show" class="mr-2 edit btn btn-sm btn-success"><i class="fa fa-file-alt"></i> View</a> ' +
-    '<a href="/archives/'+row.id+'/restore" class="mr-2 edit btn btn-sm btn-primary"><i class="fa fa-trash-alt"></i> Restore</a> </div>'
+    return '<div class="d-flex justify-content-center"><a href="/archives/procurements/'+row.id+'/show" class="mr-2 edit btn btn-sm btn-success"><i class="fa fa-file-alt"></i> View</a> ' +
+    '<a href="/archives/procurements/'+row.id+'/restore" class="mr-2 edit btn btn-sm btn-primary"><i class="fa fa-trash-alt"></i> Restore</a> </div>'
     }
     }
     ],

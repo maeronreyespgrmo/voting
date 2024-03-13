@@ -10,7 +10,7 @@
 @endsection
 
 @section('page_script')
-<script src="/js/archives.js"></script>
+<script src="/js/archives_procurement.js"></script>
 @endsection
 
 @section('content')

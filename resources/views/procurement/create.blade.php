@@ -20,8 +20,8 @@
             @csrf
         <div class="col-md-12">
             <div class="card mb-12">
-              <h5 class="card-header">Create Procurement</h5>
               <div class="card-body">
+              <h5 class="card-header">Create Public Bidding</h5>
                 <div class="mt-2 mb-3">
                   <label for="largeInput" class="form-label">Category</label>
                   <select name="parent" id="defaultSelect" class="form-select">
