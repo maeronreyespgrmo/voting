@@ -2,27 +2,24 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class UserSeeder extends Seeder
+class CandidateSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $users = array(
+        //
+        $query = array(
             array(
-                'username' => 'admin',
-                'password' => bcrypt('1234'),
-                'type'     => 1
+                'full_name' => 'admin',
+                'position_id' => 1,
             ),
         );
-        DB::table('users')->insert($users);
-
+        DB::table('tbl_candidates')->insert($query);
     }
 }

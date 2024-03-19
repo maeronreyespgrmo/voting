@@ -12,12 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         //
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('tbl_candidates', function (Blueprint $table) {
             $table->id();
-            $table->string('username')->unique();
-            $table->string('password');
-            $table->smallInteger('type');
-            $table->rememberToken();
+            $table->string('full_name')->unique();
+            $table->string('position_id');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+         Schema::dropIfExists('tbl_candidates');
     }
 };

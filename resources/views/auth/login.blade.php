@@ -85,7 +85,7 @@ filter: invert(2%);
 </a>
 </div>
 <!-- /Logo -->
-<h3 id="label_proc" class="mb-1">Procuments Information System Login</h3>
+<h3 id="label_proc" class="mb-1">Voting System Login</h3>
 <p class="mb-3">Please sign-in to your account and start the adventure</p>
 @include('layouts.message')
 <form method="POST" action="{{ route('login') }}">
@@ -116,9 +116,9 @@ filter: invert(2%);
         {{ __('Login') }}
     </button>
 <br>
-    <a href="/" id="login" class="btn btn-primary d-grid w-100">
+    <!-- <a href="/" id="login" class="btn btn-primary d-grid w-100">
         Back to Main
-    </a>
+    </a> -->
 
 </form>
 </div>

@@ -28,7 +28,7 @@ class HomeController extends Controller
     {
         $page = [
             'name'  =>  'Dashboard',
-            'title' =>  'BAC Procurement System',
+            'title' =>  'Voting System',
             'crumb' =>  array('Dashboard' => '/dashboard')
         ];
 
